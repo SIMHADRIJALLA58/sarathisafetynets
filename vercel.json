@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "sarathisafetynets-lime.vercel.app"
+        }
+      ],
+      "destination": "https://sarathisafetynets.in/$1",
+      "permanent": true
+    }
+  ]
+}
