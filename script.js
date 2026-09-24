@@ -373,7 +373,7 @@ Sent from Kranthi Safety Nets Website`;
 
 
         const url =
-            `https://wa.me/919663314447?text=${encodeURIComponent(whatsappMessage)}`;
+            `https://wa.me/916366277646?text=${encodeURIComponent(whatsappMessage)}`;
 
 
         window.open(url, "_blank");
