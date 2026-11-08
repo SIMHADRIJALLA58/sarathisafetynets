@@ -383,7 +383,12 @@
 
   gtag('config', 'AW-18495506947');
 </script>
-
+<script async src="https://www.googletagmanager.com/gtm.js?id=AW-18495506947"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
 <script>
 function trackWhatsAppContact(event) {
     if (typeof gtag === 'function') {
@@ -395,6 +400,8 @@ function trackWhatsAppContact(event) {
     }
 }
 </script>
+
+
 <!-- Event snippet for Submit lead form conversion page -->
 <script>
   gtag('event', 'conversion', {
