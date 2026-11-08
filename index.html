@@ -3376,6 +3376,25 @@ function gtag_report_conversion(url) {
 <!-- Your JavaScript -->
 <script src="script.js"></script>
 
+<script>
+function gtag_report_conversion(url) {
+
+    var callback = function () {
+        if (typeof(url) !== 'undefined') {
+            window.location.href = url;
+        }
+    };
+
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18495506947/T-zICNC5h6EdEIOUrPNE',
+        'event_callback': callback,
+        'event_timeout': 2000
+    });
+
+    return false;
+}
+</script>
+
 <!-- ========================================= -->
 <!-- HEADER END -->
 <!-- ========================================= --></body>
