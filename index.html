@@ -422,6 +422,23 @@ function trackWhatsAppContact(event) {
 </script>
 
 
+<script>
+function gtag_report_conversion(url) {
+    var callback = function () {
+        if (typeof(url) !== 'undefined') {
+            window.location = url;
+        }
+    };
+
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18495506947/T-zICNC5h6EdEIOUrPNE',
+        'event_callback': callback
+    });
+
+    return false;
+}
+</script>
+
 <!-- Event snippet for Submit lead form conversion page -->
 <script>
   gtag('event', 'conversion', {
