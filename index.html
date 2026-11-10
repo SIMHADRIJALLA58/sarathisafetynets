@@ -475,6 +475,33 @@ function gtag_report_conversion(url) {
     return false;
 }
 </script>
+<script>
+// Call click (use on tel: links)
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof url !== 'undefined') {
+      window.location.href = url;
+    }
+  };
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18495506947/TSr5CJ-by7UdEIOUrPNE',
+    'value': 1.0,
+    'currency': 'INR',
+    'event_callback': callback,
+    'event_timeout': 2000
+  });
+  return false;
+}
+
+// WhatsApp click (use on wa.me links)
+function trackWhatsAppContact() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18495506947/TSr5CJ-by7UdEIOUrPNE',
+    'value': 1.0,
+    'currency': 'INR'
+  });
+}
+</script>
 </head>
 <body>
     <!-- ========================================= -->
